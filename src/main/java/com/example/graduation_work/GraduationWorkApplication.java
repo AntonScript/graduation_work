@@ -10,4 +10,5 @@ public class GraduationWorkApplication {
 		SpringApplication.run(GraduationWorkApplication.class, args);
 	}
 
+
 }

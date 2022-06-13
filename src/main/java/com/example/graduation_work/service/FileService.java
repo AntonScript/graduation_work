@@ -1,8 +1,7 @@
 package com.example.graduation_work.service;
 
-import com.example.graduation_work.domain.File;
-import org.springframework.web.multipart.MultipartFile;
-import java.util.List;
+import com.example.graduation_work.api.dto.file.FileRequestDto;
+import com.example.graduation_work.api.dto.file.FileResponseDto;
 
 /**
  * Сервис для работы с файлами и их нормализацией.
@@ -11,6 +10,8 @@ import java.util.List;
  */
 public interface FileService {
 
-    public void verify(MultipartFile file, List<NormalizType> normalizers, boolean isRecording);
+    FileResponseDto verify(FileRequestDto dto);
+
+    Boolean save(Long id);
 
 }

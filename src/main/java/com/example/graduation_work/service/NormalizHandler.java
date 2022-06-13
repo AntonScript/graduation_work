@@ -1,6 +1,7 @@
 package com.example.graduation_work.service;
 
 import com.example.graduation_work.domain.File;
+import java.util.List;
 
 /**
  * Сервис для нормализации файла.
@@ -9,7 +10,7 @@ import com.example.graduation_work.domain.File;
  */
 public interface NormalizHandler {
 
-    public File fileNormalization(File file);
+    List<String> fileNormalization(List<String> file);
 
     public String getName();
 }
