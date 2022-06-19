@@ -45,9 +45,6 @@ public class Document {
     @Column(name = "name_inspector")
     private String nameInspector;
 
-    @Column(name = "id_file")
-    private Long idFileInStorage;
-
     @Column(name = "file_path")
     private String filePath;
 
